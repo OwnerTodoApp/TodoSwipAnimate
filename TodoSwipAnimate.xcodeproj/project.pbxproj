@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7E31D242177323E00F6C6DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D232177323E00F6C6DA /* AppDelegate.m */; };
+		F7E31D272177323E00F6C6DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D262177323E00F6C6DA /* ViewController.m */; };
+		F7E31D2A2177323E00F6C6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E31D282177323E00F6C6DA /* Main.storyboard */; };
+		F7E31D2C2177324100F6C6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E31D2B2177324100F6C6DA /* Assets.xcassets */; };
+		F7E31D2F2177324100F6C6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E31D2D2177324100F6C6DA /* LaunchScreen.storyboard */; };
+		F7E31D322177324100F6C6DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D312177324100F6C6DA /* main.m */; };
+		F7E31D3C2177324100F6C6DA /* TodoSwipAnimateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D3B2177324100F6C6DA /* TodoSwipAnimateTests.m */; };
+		F7E31D472177324100F6C6DA /* TodoSwipAnimateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D462177324100F6C6DA /* TodoSwipAnimateUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7E31D382177324100F6C6DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7E31D172177323E00F6C6DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7E31D1E2177323E00F6C6DA;
+			remoteInfo = TodoSwipAnimate;
+		};
+		F7E31D432177324100F6C6DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7E31D172177323E00F6C6DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7E31D1E2177323E00F6C6DA;
+			remoteInfo = TodoSwipAnimate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7E31D1F2177323E00F6C6DA /* TodoSwipAnimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoSwipAnimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E31D222177323E00F6C6DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F7E31D232177323E00F6C6DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F7E31D252177323E00F6C6DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F7E31D262177323E00F6C6DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F7E31D292177323E00F6C6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7E31D2B2177324100F6C6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7E31D2E2177324100F6C6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7E31D302177324100F6C6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E31D312177324100F6C6DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7E31D372177324100F6C6DA /* TodoSwipAnimateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoSwipAnimateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E31D3B2177324100F6C6DA /* TodoSwipAnimateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoSwipAnimateTests.m; sourceTree = "<group>"; };
+		F7E31D3D2177324100F6C6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E31D422177324100F6C6DA /* TodoSwipAnimateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoSwipAnimateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E31D462177324100F6C6DA /* TodoSwipAnimateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoSwipAnimateUITests.m; sourceTree = "<group>"; };
+		F7E31D482177324100F6C6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7E31D1C2177323E00F6C6DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E31D342177324100F6C6DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E31D3F2177324100F6C6DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7E31D162177323E00F6C6DA = {
+			isa = PBXGroup;
+			children = (
+				F7E31D212177323E00F6C6DA /* TodoSwipAnimate */,
+				F7E31D3A2177324100F6C6DA /* TodoSwipAnimateTests */,
+				F7E31D452177324100F6C6DA /* TodoSwipAnimateUITests */,
+				F7E31D202177323E00F6C6DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7E31D202177323E00F6C6DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7E31D1F2177323E00F6C6DA /* TodoSwipAnimate.app */,
+				F7E31D372177324100F6C6DA /* TodoSwipAnimateTests.xctest */,
+				F7E31D422177324100F6C6DA /* TodoSwipAnimateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7E31D212177323E00F6C6DA /* TodoSwipAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				F7E31D222177323E00F6C6DA /* AppDelegate.h */,
+				F7E31D232177323E00F6C6DA /* AppDelegate.m */,
+				F7E31D252177323E00F6C6DA /* ViewController.h */,
+				F7E31D262177323E00F6C6DA /* ViewController.m */,
+				F7E31D282177323E00F6C6DA /* Main.storyboard */,
+				F7E31D2B2177324100F6C6DA /* Assets.xcassets */,
+				F7E31D2D2177324100F6C6DA /* LaunchScreen.storyboard */,
+				F7E31D302177324100F6C6DA /* Info.plist */,
+				F7E31D312177324100F6C6DA /* main.m */,
+			);
+			path = TodoSwipAnimate;
+			sourceTree = "<group>";
+		};
+		F7E31D3A2177324100F6C6DA /* TodoSwipAnimateTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7E31D3B2177324100F6C6DA /* TodoSwipAnimateTests.m */,
+				F7E31D3D2177324100F6C6DA /* Info.plist */,
+			);
+			path = TodoSwipAnimateTests;
+			sourceTree = "<group>";
+		};
+		F7E31D452177324100F6C6DA /* TodoSwipAnimateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7E31D462177324100F6C6DA /* TodoSwipAnimateUITests.m */,
+				F7E31D482177324100F6C6DA /* Info.plist */,
+			);
+			path = TodoSwipAnimateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7E31D1E2177323E00F6C6DA /* TodoSwipAnimate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E31D4B2177324100F6C6DA /* Build configuration list for PBXNativeTarget "TodoSwipAnimate" */;
+			buildPhases = (
+				F7E31D1B2177323E00F6C6DA /* Sources */,
+				F7E31D1C2177323E00F6C6DA /* Frameworks */,
+				F7E31D1D2177323E00F6C6DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodoSwipAnimate;
+			productName = TodoSwipAnimate;
+			productReference = F7E31D1F2177323E00F6C6DA /* TodoSwipAnimate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7E31D362177324100F6C6DA /* TodoSwipAnimateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E31D4E2177324100F6C6DA /* Build configuration list for PBXNativeTarget "TodoSwipAnimateTests" */;
+			buildPhases = (
+				F7E31D332177324100F6C6DA /* Sources */,
+				F7E31D342177324100F6C6DA /* Frameworks */,
+				F7E31D352177324100F6C6DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7E31D392177324100F6C6DA /* PBXTargetDependency */,
+			);
+			name = TodoSwipAnimateTests;
+			productName = TodoSwipAnimateTests;
+			productReference = F7E31D372177324100F6C6DA /* TodoSwipAnimateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7E31D412177324100F6C6DA /* TodoSwipAnimateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E31D512177324100F6C6DA /* Build configuration list for PBXNativeTarget "TodoSwipAnimateUITests" */;
+			buildPhases = (
+				F7E31D3E2177324100F6C6DA /* Sources */,
+				F7E31D3F2177324100F6C6DA /* Frameworks */,
+				F7E31D402177324100F6C6DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7E31D442177324100F6C6DA /* PBXTargetDependency */,
+			);
+			name = TodoSwipAnimateUITests;
+			productName = TodoSwipAnimateUITests;
+			productReference = F7E31D422177324100F6C6DA /* TodoSwipAnimateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7E31D172177323E00F6C6DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "童星";
+				TargetAttributes = {
+					F7E31D1E2177323E00F6C6DA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F7E31D362177324100F6C6DA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F7E31D1E2177323E00F6C6DA;
+					};
+					F7E31D412177324100F6C6DA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F7E31D1E2177323E00F6C6DA;
+					};
+				};
+			};
+			buildConfigurationList = F7E31D1A2177323E00F6C6DA /* Build configuration list for PBXProject "TodoSwipAnimate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7E31D162177323E00F6C6DA;
+			productRefGroup = F7E31D202177323E00F6C6DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7E31D1E2177323E00F6C6DA /* TodoSwipAnimate */,
+				F7E31D362177324100F6C6DA /* TodoSwipAnimateTests */,
+				F7E31D412177324100F6C6DA /* TodoSwipAnimateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7E31D1D2177323E00F6C6DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E31D2F2177324100F6C6DA /* LaunchScreen.storyboard in Resources */,
+				F7E31D2C2177324100F6C6DA /* Assets.xcassets in Resources */,
+				F7E31D2A2177323E00F6C6DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E31D352177324100F6C6DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E31D402177324100F6C6DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E31D1B2177323E00F6C6DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E31D272177323E00F6C6DA /* ViewController.m in Sources */,
+				F7E31D322177324100F6C6DA /* main.m in Sources */,
+				F7E31D242177323E00F6C6DA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E31D332177324100F6C6DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E31D3C2177324100F6C6DA /* TodoSwipAnimateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E31D3E2177324100F6C6DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E31D472177324100F6C6DA /* TodoSwipAnimateUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7E31D392177324100F6C6DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7E31D1E2177323E00F6C6DA /* TodoSwipAnimate */;
+			targetProxy = F7E31D382177324100F6C6DA /* PBXContainerItemProxy */;
+		};
+		F7E31D442177324100F6C6DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7E31D1E2177323E00F6C6DA /* TodoSwipAnimate */;
+			targetProxy = F7E31D432177324100F6C6DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7E31D282177323E00F6C6DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7E31D292177323E00F6C6DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7E31D2D2177324100F6C6DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7E31D2E2177324100F6C6DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7E31D492177324100F6C6DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F7E31D4A2177324100F6C6DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7E31D4C2177324100F6C6DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoSwipAnimate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.TodoSwipAnimate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7E31D4D2177324100F6C6DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoSwipAnimate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.TodoSwipAnimate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7E31D4F2177324100F6C6DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoSwipAnimateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.TodoSwipAnimateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoSwipAnimate.app/TodoSwipAnimate";
+			};
+			name = Debug;
+		};
+		F7E31D502177324100F6C6DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoSwipAnimateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.TodoSwipAnimateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoSwipAnimate.app/TodoSwipAnimate";
+			};
+			name = Release;
+		};
+		F7E31D522177324100F6C6DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoSwipAnimateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.TodoSwipAnimateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TodoSwipAnimate;
+			};
+			name = Debug;
+		};
+		F7E31D532177324100F6C6DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoSwipAnimateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.TodoSwipAnimateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TodoSwipAnimate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7E31D1A2177323E00F6C6DA /* Build configuration list for PBXProject "TodoSwipAnimate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E31D492177324100F6C6DA /* Debug */,
+				F7E31D4A2177324100F6C6DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E31D4B2177324100F6C6DA /* Build configuration list for PBXNativeTarget "TodoSwipAnimate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E31D4C2177324100F6C6DA /* Debug */,
+				F7E31D4D2177324100F6C6DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E31D4E2177324100F6C6DA /* Build configuration list for PBXNativeTarget "TodoSwipAnimateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E31D4F2177324100F6C6DA /* Debug */,
+				F7E31D502177324100F6C6DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E31D512177324100F6C6DA /* Build configuration list for PBXNativeTarget "TodoSwipAnimateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E31D522177324100F6C6DA /* Debug */,
+				F7E31D532177324100F6C6DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7E31D172177323E00F6C6DA /* Project object */;
+}
