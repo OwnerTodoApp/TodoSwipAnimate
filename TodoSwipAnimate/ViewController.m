@@ -9,23 +9,35 @@
 #import "ToDoAnimate.h"
 #import "LineAnimated.h"
 @interface ViewController ()
-
+@property(nonatomic, strong) ToDoAnimate *checkbox;
+@property(nonatomic, strong) LineAnimated *line;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ToDoAnimate *checkbox = [[ToDoAnimate alloc] initWithFrame:CGRectMake(20, 200, 50, 50)];
-    [self.view addSubview:checkbox];
-    checkbox.ToDoAnimatedAnimProgress = 5;
-    [checkbox addToDoAnimatedAnimation];
-    
-    LineAnimated *line = [[LineAnimated alloc] initWithFrame:CGRectMake(70, 225, 100, 10)];
-    [self.view addSubview:line];
-    line.ToDoAnimatedAnimProgress = 3;
-    [line addToDoAnimatedAnimation];
+//    ToDoAnimate *checkbox = [[ToDoAnimate alloc] initWithFrame:CGRectMake(20, 200, 50, 50)];
+//    [self.view addSubview:checkbox];
+//    checkbox.ToDoAnimatedAnimProgress = 5;
+//    [checkbox addToDoAnimatedAnimation];
+//    
+//    LineAnimated *line = [[LineAnimated alloc] initWithFrame:CGRectMake(70, 220, 200, 10)];
+//    [self.view addSubview:line];
+//    line.ToDoAnimatedAnimProgress = 3;
+//    [line addToDoAnimatedAnimation];
 }
 
+
+- (IBAction)animated:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    ToDoAnimate *checkbox = [[ToDoAnimate alloc] initWithFrame:CGRectMake(20, 200, 50, 50)];
+    [self.view addSubview:checkbox];
+    [checkbox addToDoAnimatedAnimation];
+    
+    LineAnimated *line = [[LineAnimated alloc] initWithFrame:CGRectMake(70, 220, 200, 10)];
+    [self.view addSubview:line];
+    [line addToDoAnimatedAnimation];
+}
 
 @end

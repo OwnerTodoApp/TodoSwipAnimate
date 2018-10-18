@@ -73,7 +73,7 @@
 }
 
 - (void)setupLayers{
-    self.backgroundColor = [UIColor colorWithRed:1 green: 1 blue:1 alpha:1];
+    self.backgroundColor = [UIColor clearColor];
 
     CAShapeLayer * path = [CAShapeLayer layer];
     [self.layer addSublayer:path];

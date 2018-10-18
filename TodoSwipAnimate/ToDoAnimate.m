@@ -145,7 +145,7 @@
     ////Path animation
     CAKeyframeAnimation * pathStrokeStartAnim = [CAKeyframeAnimation animationWithKeyPath:@"strokeStart"];
     pathStrokeStartAnim.values   = @[@1, @0];
-    pathStrokeStartAnim.keyTimes = @[@0, @1];
+    pathStrokeStartAnim.keyTimes = @[@1, @0];
     pathStrokeStartAnim.duration = 0.5 * totalDuration;
     
     CAAnimationGroup * pathToDoAnimatedAnim = [QCMethod groupAnimations:@[pathStrokeStartAnim] fillMode:fillMode];
