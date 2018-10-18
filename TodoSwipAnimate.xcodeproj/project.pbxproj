@@ -15,6 +15,9 @@
 		F7E31D322177324100F6C6DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D312177324100F6C6DA /* main.m */; };
 		F7E31D3C2177324100F6C6DA /* TodoSwipAnimateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D3B2177324100F6C6DA /* TodoSwipAnimateTests.m */; };
 		F7E31D472177324100F6C6DA /* TodoSwipAnimateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D462177324100F6C6DA /* TodoSwipAnimateUITests.m */; };
+		F7E31D5C217886D200F6C6DA /* ToDoAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D5B217886D200F6C6DA /* ToDoAnimate.m */; };
+		F7E31D60217886DB00F6C6DA /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D5F217886DB00F6C6DA /* QCMethod.m */; };
+		F7E31D6321788F6E00F6C6DA /* LineAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E31D6221788F6E00F6C6DA /* LineAnimated.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		F7E31D422177324100F6C6DA /* TodoSwipAnimateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoSwipAnimateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E31D462177324100F6C6DA /* TodoSwipAnimateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoSwipAnimateUITests.m; sourceTree = "<group>"; };
 		F7E31D482177324100F6C6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E31D5B217886D200F6C6DA /* ToDoAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoAnimate.m; sourceTree = "<group>"; };
+		F7E31D5D217886DB00F6C6DA /* ToDoAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoAnimate.h; sourceTree = "<group>"; };
+		F7E31D5E217886DB00F6C6DA /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
+		F7E31D5F217886DB00F6C6DA /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
+		F7E31D6121788F6E00F6C6DA /* LineAnimated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineAnimated.h; sourceTree = "<group>"; };
+		F7E31D6221788F6E00F6C6DA /* LineAnimated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineAnimated.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,13 @@
 		F7E31D212177323E00F6C6DA /* TodoSwipAnimate */ = {
 			isa = PBXGroup;
 			children = (
+				F7E31D5E217886DB00F6C6DA /* QCMethod.h */,
+				F7E31D5F217886DB00F6C6DA /* QCMethod.m */,
+				F7E31D5D217886DB00F6C6DA /* ToDoAnimate.h */,
+				F7E31D5B217886D200F6C6DA /* ToDoAnimate.m */,
+				F7E31D6121788F6E00F6C6DA /* LineAnimated.h */,
+				F7E31D6221788F6E00F6C6DA /* LineAnimated.m */,
+				F7E31D5A2178680E00F6C6DA /* Animated */,
 				F7E31D222177323E00F6C6DA /* AppDelegate.h */,
 				F7E31D232177323E00F6C6DA /* AppDelegate.m */,
 				F7E31D252177323E00F6C6DA /* ViewController.h */,
@@ -130,6 +146,13 @@
 				F7E31D482177324100F6C6DA /* Info.plist */,
 			);
 			path = TodoSwipAnimateUITests;
+			sourceTree = "<group>";
+		};
+		F7E31D5A2178680E00F6C6DA /* Animated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E31D272177323E00F6C6DA /* ViewController.m in Sources */,
+				F7E31D60217886DB00F6C6DA /* QCMethod.m in Sources */,
+				F7E31D5C217886D200F6C6DA /* ToDoAnimate.m in Sources */,
 				F7E31D322177324100F6C6DA /* main.m in Sources */,
+				F7E31D6321788F6E00F6C6DA /* LineAnimated.m in Sources */,
 				F7E31D242177323E00F6C6DA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,12 +462,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W692395U5W;
 				INFOPLIST_FILE = TodoSwipAnimate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.TodoSwipAnimate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.demo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,12 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W692395U5W;
 				INFOPLIST_FILE = TodoSwipAnimate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.TodoSwipAnimate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongxing.demo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

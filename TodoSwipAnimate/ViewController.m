@@ -6,7 +6,8 @@
 //  @author tongxing(tongxing@huami.com)
 
 #import "ViewController.h"
-
+#import "ToDoAnimate.h"
+#import "LineAnimated.h"
 @interface ViewController ()
 
 @end
@@ -15,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    ToDoAnimate *checkbox = [[ToDoAnimate alloc] initWithFrame:CGRectMake(20, 200, 50, 50)];
+    [self.view addSubview:checkbox];
+    checkbox.ToDoAnimatedAnimProgress = 5;
+    [checkbox addToDoAnimatedAnimation];
+    
+    LineAnimated *line = [[LineAnimated alloc] initWithFrame:CGRectMake(70, 225, 100, 10)];
+    [self.view addSubview:line];
+    line.ToDoAnimatedAnimProgress = 3;
+    [line addToDoAnimatedAnimation];
 }
 
 
