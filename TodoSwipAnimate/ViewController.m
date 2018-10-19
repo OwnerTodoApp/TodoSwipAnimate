@@ -31,13 +31,26 @@
 
 - (IBAction)animated:(UIButton *)sender {
     sender.selected = !sender.selected;
-    ToDoAnimate *checkbox = [[ToDoAnimate alloc] initWithFrame:CGRectMake(20, 200, 50, 50)];
-    [self.view addSubview:checkbox];
-    [checkbox addToDoAnimatedAnimation];
+    [self.line removeFromSuperview];
+    [self.checkbox removeFromSuperview];
+    if (sender.selected) {
+        self.checkbox = [[ToDoAnimate alloc] initWithFrame:CGRectMake(20, 200, 50, 50)];
+        [self.view addSubview:self.checkbox];
+        [self.checkbox addToDoAnimatedAnimation];
+        
+        self.line = [[LineAnimated alloc] initWithFrame:CGRectMake(70, 220, 200, 10)];
+        [self.view addSubview:self.line];
+        [self.line addToDoAnimatedAnimation];
+    }else{
+        self.checkbox = [[ToDoAnimate alloc] initWithFrame:CGRectMake(20, 200, 50, 50)];
+        [self.view addSubview:self.checkbox];
+        [self.checkbox addToDoDismissAnimatedAnimation];
+        
+        self.line = [[LineAnimated alloc] initWithFrame:CGRectMake(70, 220, 200, 10)];
+        [self.view addSubview:self.line];
+        [self.line addToDoDismissAnimatedAnimation];
+    }
     
-    LineAnimated *line = [[LineAnimated alloc] initWithFrame:CGRectMake(70, 220, 200, 10)];
-    [self.view addSubview:line];
-    [line addToDoAnimatedAnimation];
 }
 
 @end

@@ -115,6 +115,10 @@
     [self addToDoAnimatedAnimationCompletionBlock:nil];
 }
 
+- (void)addToDoDismissAnimatedAnimation {
+    [self addToDoAnimatedAnimationReverse:YES totalDuration:2 endTime:1 completionBlock:nil];
+}
+
 - (void)addToDoAnimatedAnimationCompletionBlock:(void (^)(BOOL finished))completionBlock{
     [self addToDoAnimatedAnimationReverse:NO totalDuration:2 endTime:1 completionBlock:completionBlock];
 }
@@ -132,25 +136,36 @@
         [self.completionBlocks setObject:completionBlock forKey:[self.layer animationForKey:@"ToDoAnimated"]];
     }
     
-    if (!reverseAnimation){
-        [self setupLayerFrames];
-        [self resetLayerPropertiesForLayerIdentifiers:@[@"path"]];
-    }
+    [self setupLayerFrames];
+    [self resetLayerPropertiesForLayerIdentifiers:@[@"path"]];
     
     self.layer.speed = 1;
     self.animationAdded = NO;
     
-    NSString * fillMode = reverseAnimation ? kCAFillModeBoth : kCAFillModeForwards;
-    
-    ////Path animation
-    CAKeyframeAnimation * pathStrokeStartAnim = [CAKeyframeAnimation animationWithKeyPath:@"strokeStart"];
-    pathStrokeStartAnim.values   = @[@1, @0];
-    pathStrokeStartAnim.keyTimes = @[@1, @0];
-    pathStrokeStartAnim.duration = 0.5 * totalDuration;
-    
-    CAAnimationGroup * pathToDoAnimatedAnim = [QCMethod groupAnimations:@[pathStrokeStartAnim] fillMode:fillMode];
-    if (reverseAnimation) pathToDoAnimatedAnim = (CAAnimationGroup *)[QCMethod reverseAnimation:pathToDoAnimatedAnim totalDuration:totalDuration];
-    [self.layers[@"path"] addAnimation:pathToDoAnimatedAnim forKey:@"pathToDoAnimatedAnim"];
+    NSString * fillMode = kCAFillModeForwards;
+    if (!reverseAnimation){
+        ////Path animation
+        CAKeyframeAnimation * pathStrokeStartAnim = [CAKeyframeAnimation animationWithKeyPath:@"strokeStart"];
+        pathStrokeStartAnim.values   = @[@1, @0];
+        pathStrokeStartAnim.keyTimes = @[@1, @0];
+        pathStrokeStartAnim.duration = 0.5 * totalDuration;
+        
+        CAAnimationGroup * pathToDoAnimatedAnim = [QCMethod groupAnimations:@[pathStrokeStartAnim] fillMode:fillMode];
+        if (reverseAnimation) pathToDoAnimatedAnim = (CAAnimationGroup *)[QCMethod reverseAnimation:pathToDoAnimatedAnim totalDuration:totalDuration];
+        [self.layers[@"path"] addAnimation:pathToDoAnimatedAnim forKey:@"pathToDoAnimatedAnim"];
+        
+    }else{
+        ////Path animation
+        CAKeyframeAnimation * pathStrokeStartAnim = [CAKeyframeAnimation animationWithKeyPath:@"strokeStart"];
+        pathStrokeStartAnim.values   = @[@1, @0];
+        pathStrokeStartAnim.keyTimes = @[@1, @0];
+        pathStrokeStartAnim.duration = 0.5 * totalDuration;
+        
+        CAAnimationGroup * pathToDoAnimatedAnim = [QCMethod groupAnimations:@[pathStrokeStartAnim] fillMode:fillMode];
+        if (reverseAnimation) pathToDoAnimatedAnim = (CAAnimationGroup *)[QCMethod reverseAnimation:pathToDoAnimatedAnim totalDuration:totalDuration];
+        [self.layers[@"path"] addAnimation:pathToDoAnimatedAnim forKey:@"pathToDoAnimatedAnim"];
+        
+    }
     
     
 }

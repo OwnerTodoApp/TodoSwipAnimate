@@ -14,9 +14,10 @@ IB_DESIGNABLE
 @property (nonatomic, assign) CGFloat  ToDoAnimatedAnimProgress;
 
 - (void)addToDoAnimatedAnimation;
-- (void)addToDoAnimatedAnimationCompletionBlock:(void (^)(BOOL finished))completionBlock;
-- (void)addToDoAnimatedAnimationReverse:(BOOL)reverseAnimation totalDuration:(CFTimeInterval)totalDuration endTime:(CFTimeInterval)endTime completionBlock:(void (^)(BOOL finished))completionBlock;
+
 - (void)removeAnimationsForAnimationId:(NSString *)identifier;
 - (void)removeAllAnimations;
+
+- (void)addToDoDismissAnimatedAnimation;
 
 @end
